@@ -1,18 +1,5 @@
 let test = document.getElementById("test");
 let test2 = document.getElementById("test2");
-/*fetch('https://animechan.vercel.app/api/random')
-    .then(response => response.json()) 
-    .then(quote => test.innerHTML = `<b>Anime Name:</b> ${quote.anime} <br><b>Character:</b> ${quote.character}<br><b>Quote:</b> ${quote.quote}`)
-
-
-    let response = await fetch('https://animechan.vercel.app/api/random');
-    if (response.ok) { // if HTTP-status is 200-299
-        // get the response body (the method explained below)
-        let json = await response.json();
-      } else {
-        alert("HTTP-Error: " + response.status);
-      }
-*/
 let number = Math.floor(Math.random() * 23990);
 fetch(
   `http://geodb-free-service.wirefreethought.com/v1/geo/cities?limit=1&offset=${number}&hateoasMode=off`
